@@ -6,6 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\black.jpg" />
+    <None Include="wwwroot\images\pink.jpg" />
+    <None Include="wwwroot\images\pink1.jpg" />
+    <None Include="wwwroot\images\purple.jpg" />
+    <None Include="wwwroot\images\star.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.4" />
