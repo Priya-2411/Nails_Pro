@@ -8,4 +8,7 @@ Asp.net mvc website with crud operation and role managements
 
 
 Implementing Authorization
-Created an Admin role and gave the access to the privacy policy only to the Admin
+Created an Admin role and gave the access to the privacy policy only to the Admin 
+
+Hiding Links
+There are 2 roles specified:  Admin and Staff.. only the Admin user is able to add staff to the database and the Staff is able to add customers to the database.
