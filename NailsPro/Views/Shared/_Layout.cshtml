@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - NailsPro</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap_cosmo.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/bootstrap_cosmo.css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -34,6 +34,18 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Administration" asp-action="ListRoles">List Roles</a>
+                        </li>
+                        <li>
+                            @if (User.IsInRole("Staff"))
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Create">Add Employee</a>
+                            }
+                        </li>
+                        <li>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Staffs" asp-action="Create">Add Staff</a>
+                            }
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />

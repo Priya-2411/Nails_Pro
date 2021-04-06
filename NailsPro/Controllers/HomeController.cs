@@ -23,6 +23,8 @@ namespace NailsPro.Controllers
         {
             return View();
         }
+
+
         [Authorize(Roles ="Admin")]
         public IActionResult Privacy()
         {
@@ -34,5 +36,7 @@ namespace NailsPro.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }

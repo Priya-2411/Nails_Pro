@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NailsPro.Data;
+using NailsPro.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,7 @@ namespace NailsPro
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
+            services.AddDbContext<NailContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             //  services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             //     .AddEntityFrameworkStores<ApplicationDbContext>();
