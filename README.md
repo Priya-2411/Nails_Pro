@@ -14,3 +14,6 @@ Created an Admin role and gave the access to the privacy policy only to the Admi
 
 Hiding Links
 There are 2 roles specified:  Admin and Staff.. only the Admin user is able to add staff to the database and the Staff is able to add customers to the database.
+
+*******************************************************************************************************************************************************************
+CRUD operations in MVC
