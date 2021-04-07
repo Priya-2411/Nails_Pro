@@ -10,7 +10,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-striped table-bordered" id="tblEmployee">
     <thead>
         <tr>
             <th>
@@ -35,7 +35,7 @@
                 @Html.DisplayFor(modelItem => item.staff_id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Customer.Address)
+                @Html.DisplayFor(modelItem => item.Customer.CustomerId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.BookingId">Edit</a> |
